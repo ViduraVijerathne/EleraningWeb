@@ -1,0 +1,5 @@
+<?php 
+$webName = "Demo Name";
+
+
+?>
