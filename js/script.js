@@ -20,6 +20,9 @@ function ajax_POST(form,url){
     return request
 }
 
+
+
+
 function signup(){
     const form = new FormData();
 
@@ -197,3 +200,35 @@ function signup(){
 
 
 }
+
+function signin(){
+    const email = document.getElementById('email2').value;
+    const password = document.getElementById('password2').value;
+    const rememberMe = document.getElementById('rememberMe').checked;
+
+    const form = new FormData();
+    form.append("email",email);
+    form.append("password",password);
+    form.append("rememberMe",rememberMe);
+
+    const request = ajax_POST(form,'../../processes/signInProcess.php');
+
+    request.onreadystatechange = function(){
+        if(request.readyState == 4){
+            var response = request.responseText;
+            var intResponse = parseInt(response)
+            
+            if (response == "1802"){
+                
+                window.location.href = "../user/home.php";
+            }else{
+                const msg = "invalid User Name Or Password :ERRO_ "+response;
+                alert(msg);
+            }
+        }
+    }
+
+
+
+}
+

@@ -1,4 +1,5 @@
 <?php
+require('Database.php');
 function serchGenderByID($genderId){
     $grs = Database::search("SELECT * FROM  `gender` WHERE (`g_id` = '".$genderId."')");
     return $grs;
@@ -26,6 +27,18 @@ function CreateAccount($uname,$fname,$lname,$schoolName,$wNumber,$tNumber,$email
     Database::iud($q);
 
 
+}
+
+function serchStudentByEmailPassword($email,$password){
+    
+     $q = "SELECT * FROM `student` WHERE (`email` = 'viduranox@gmail.com' AND `password` = 'password')";
+     $rs =  Database::search($q);
+     return ($rs);
+     
+    
+    //
+
+    // return ($rs);
 }
 
 

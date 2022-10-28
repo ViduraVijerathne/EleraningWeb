@@ -1,0 +1,59 @@
+501 - username is not set
+502 - username is too short
+503 - user name is too long
+
+601 - firs name is not set
+602 - first name is too short
+603 - first name is too long
+
+701 - last name is not set
+702 - last name is too short
+703 - last name is too long
+
+801 - school name is not set
+802 - school name is too short
+803 - school name is too long
+
+901 - whatsapp number not det
+902 - whatsapp number length error
+903 - invalid whatsapp number
+
+1001 - Telegram number not det
+1002 - Telegram number length error
+1003 - invalid Telegram number
+
+1101 - email1 not set
+1102 - email1 length Error
+1103 - email lenth error
+1104 - invalid email
+
+
+1201 - address not set
+
+1301 - Empty password
+1302 - password length error
+1303 - password and retype password not match
+
+1401 - gender is not set
+1402 - gender is empty
+1403 - gender Database error
+
+1501 - Grade is not set
+1502 - Grade is empty
+1503 - Grade Database error
+
+1601 - Province is not set
+1602 - Province is empty
+1603 - Province Database error
+
+
+1701 - Destrict is not set
+1702 - Destrict is empty
+1703 - Destrict Database error
+
+
+1801 - invalid Email Or Password 
+1802 - Login Success!
+
+
+

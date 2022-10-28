@@ -135,9 +135,9 @@ else if (empty($tNumber)) {
 else if (empty($email1)) {
     echo ("1101"); //email1 not set
 } else if (strlen($email1) > 90) {
-    echo ("1102"); //email1 must have 10 char
+    echo ("1102"); //email1 length Error
 } else if (!EmailValidate($email1)){
-    echo("1103"); //email1 tNumber
+    echo("1103"); //email1 invalid
 }elseif ($email1 != $email2){
     echo("1104"); //email1 and email2  must to be same
 }
