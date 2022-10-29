@@ -232,3 +232,40 @@ function signin(){
 
 }
 
+var selected = 'OverView'
+function LeftBtnNavigation(id){
+    if (id == "Setting"){
+        document.getElementById('rightView').classList.add('d-none');
+        document.getElementById('centerView').classList.add('col-lg-10');
+    }else if (selected == "Setting"){
+        document.getElementById('rightView').classList.remove('d-none');
+        
+        document.getElementById('centerView').classList.remove('col-lg-10');
+    }
+
+    var selectingBtn_id  = id + "BTN"
+    var selectedBtn_id = selected+"BTN"
+    var selectingTab_id = id + "Tab";
+    var selectedTab_id = selected + "Tab";
+    
+    selected = id;
+
+    var selectedBtn = document.getElementById(selectedBtn_id);
+    selectedBtn.classList.remove('btn-dark')
+    var selectingBtn = document.getElementById(selectingBtn_id)
+    selectingBtn.classList.add('btn-dark')
+
+    var selectingTab = document.getElementById(selectingTab_id);
+    selectingTab.classList.remove("d-none")
+
+    var  selectednTab = document.getElementById(selectedTab_id);
+    selectednTab.classList.add("d-none")
+
+    
+
+
+}
+
+function goToExamPage(id){
+    window.location = "exam.php?id="+id
+}
